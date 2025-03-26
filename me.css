@@ -1,0 +1,13 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+.study {
+  background-color: purple;
+}
+
+.a input[type="text"] {
+  margin-left: auto;
+}

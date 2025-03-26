@@ -1,0 +1,125 @@
+.hero {
+  position: relative; /* 자식 요소를 절대 위치로 배치하려면 필요 */
+  width: 10%;
+  height: 100px; /* 원하는 이미지 높이 */
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* 이미지가 잘리더라도 꽉 차게 */
+}
+
+.title {
+  position: absolute;
+  top: 60%; /* 상단에서 50% */
+  left: 50%; /* 좌측에서 50% */
+  transform: translate(-50%, -50%); /* 정확히 중앙 정렬 */
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  text-shadow: 5px 5px 10px rgba(136, 52, 0, 1); /* 배경과의 대비 */
+}
+body {
+  font-family: "Arial", sans-serif;
+  background: #f7f7f9;
+  margin: 0;
+  padding: 0 1rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 0.5rem; /* 버튼 사이 간격 조절 */
+}
+
+select,
+input[type="text"] {
+  border-radius: 10px;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.recruit {
+  background-color: #8667f2;
+  color: white;
+}
+
+.filters {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  color: white;
+}
+
+.badge.public {
+  background-color: #5f8af7;
+}
+
+.badge.private {
+  background-color: #f95f5f;
+}
+
+.date {
+  font-size: 0.75rem;
+  color: gray;
+  text-align: right;
+}
+
+.card h3 {
+  margin: 0.5rem 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.filters {
+  display: flex;
+}
+
+.filters input[type="text"] {
+  margin-left: auto;
+}
