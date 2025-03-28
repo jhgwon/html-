@@ -1,8 +1,8 @@
-ody {
+body {
   padding: 35px;
 }
 .nav {
-  height: 50px;
+  height: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,25 +15,20 @@ ody {
   background-color: #8a87f0;
   border: none;
   border-radius: 24px;
-  height: 50px;
-  width: 180px;
+  height: 40px;
+  width: 150px;
   color: white;
 }
 
 .login {
   background-color: transparent;
   border: none;
+  height: 40px;
   border-radius: 24px;
 }
 
-.study-login {
-  display: flex;
-  gap: 30px;
-  margin-right: 30px;
-}
-
 .study-login button {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: bold;
 }
 
@@ -42,4 +37,27 @@ ody {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+}
+
+.a1 {
+  display: flex;
+  gap: 15px;
+}
+
+.a1 select,
+button,
+.a2 input {
+  width: 120px;
+  height: 30px;
+  border-radius: 15px;
+  border: 2px solid gray;
+  background-color: white;
+}
+
+.a1 button {
+  width: 190px;
+}
+
+.a2 input {
+  width: 220px;
 }
