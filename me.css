@@ -60,8 +60,22 @@ button,
   width: 190px;
 }
 
+.a2 {
+  position: relative;
+}
+
 .a2 input {
   width: 300px;
+}
+
+.search {
+  text-align: center;
+}
+
+.search-img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
 }
 
 .card-list {
@@ -84,17 +98,21 @@ button,
 }
 
 .open {
-  width: 50px;
+  width: 70px;
   border-radius: 25px;
   background-color: rgb(202, 217, 249);
   color: blue;
+  text-align: center;
+  padding: 2px;
 }
 
 .close {
-  width: 50px;
+  width: 70px;
   border-radius: 25px;
   background-color: rgb(255, 200, 200);
   color: red;
+  text-align: center;
+  padding: 2px;
 }
 
 .ment {
@@ -103,10 +121,15 @@ button,
 }
 
 .judge {
-  border-radius: 15px;
-  background-color: gray;
-  width: 50px;
+  border-radius: 25px;
+  background-color: whitesmoke;
+  width: 80px;
+  height: 30px;
+  display: flex;
+  justify-content: center; /* 가로 가운데 */
+  align-items: center;
 }
+
 .p {
   width: 20px;
   height: 20px;
